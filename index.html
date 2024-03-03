@@ -11,6 +11,10 @@
       src="https://kit.fontawesome.com/effb651193.js"
       crossorigin="anonymous"
     ></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <!--daisyUI and tailwind-->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -19,44 +23,154 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header>
+  <body class="mulish">
+    <header class="lg:mb-10">
       <!--navbar-->
       <nav class="container mx-auto">
         <div class="navbar bg-base-100 mt-50">
-          <div class="flex-1">
-            <a class="text-2xl font-bold cursor-pointer">ReTro</a>
+            <div class="flex-1 logo">
+              <a class="cursor-pointer"><img src="./images/logo.png" alt=""></a>
+            </div>
+
+              <ul class="lg:flex lg:space-x-4">
+                <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Home">
+                  <a href="#"><i class="fa-solid fa-house w-[25px]"></i></a>
+                </li>
+                <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Blog">
+                  <a href="#"><i class="fa-solid fa-pen w-[25px]"></i></a>
+                </li>
+                <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Add account">
+                  <a href="#"><i class="fa-solid fa-user-plus w-[25px]"></i></a>
+                </li>
+                <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Flag">
+                  <a href="#"><i class="fa-solid fa-flag w-[25px]"></i></a>
+                </li>
+                <li class="lg:px-4 lg:py-2 p-1 rounded-full text-center bg-indigo-400 text-white font-bold cursor-pointer">
+                  <a href="#">Sign in</i></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="flex-none dropdown">
-            <div id="menu-btn" tabindex="0" role="button" class="btn btn-ghost lg:hidden menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-              </div>
-            <ul class="lg:flex flex-col lg:space-x-4 dropdown-content z-[1]">
-              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Home">
-                <a href="#"><i class="fa-solid fa-house w-[25px]"></i></a>
-              </li>
-              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Blog">
-                <a href="#"><i class="fa-solid fa-pen w-[25px]"></i></a>
-              </li>
-              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Add account">
-                <a href="#"><i class="fa-solid fa-user-plus w-[25px]"></i></a>
-              </li>
-              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Flag">
-                <a href="#"><i class="fa-solid fa-flag w-[25px]"></i></a>
-              </li>
-              <li class="lg:px-4 lg:py-2 p-1 rounded-full text-center bg-indigo-400 text-white font-bold cursor-pointer">
-                <a href="#">Sign in</i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </nav>
       
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+      <section class="bg-[url(./images/bannerbg1.jpg)] min-h-fit bg-no-repeat bg-cover bg-center text-left text-white rounded-3xl m-4 lg:m-0 p-40 flex items-center justify-between">
+        <div class="lg:space-y-6">
+          <h1 class="text-6xl font-extrabold">Welcome to the <br> <span class="bg-gradient-to-r from-[#797DFC] to-[#5055e6] inline-block text-transparent bg-clip-text">ReTro</span> Forum</h1>
+          <p class="text-2xl font-bold">Share your favorite opinion and <br> win and wp forum coffee mug!</p>
+          <div
+                id="search-section"
+                class="bg-white p-2 flex items-center rounded-full my-4 w-96"
+              >
+                <input
+                  id="coupon-input"
+                  type="text"
+                  placeholder=""
+                  class="input border-none input-accent w-full max-w-xs rounded-full"
+                /><button
+                  id="search-btn"
+                  class="btn bg-indigo-400 lg:text-xl text-white apply rounded-full"
+                >
+                 Search
+                </button>
+              </div>
+        </div>
+        <div class="bg-white p-10 text-gray-700 space-y-6 rounded-lg">
+          <div class="flex justify-between text-xl font-bold w-[250px]">
+            <p>Registered User</p>
+            <p>01</p>
+          </div>
+          
+          <div class="flex justify-between text-xl font-bold w-[250px]">
+            <p>Forum</p>
+            <p>02</p>
+          </div>
+          
+          <div class="flex justify-between text-xl font-bold w-[250px]">
+            <p>Topics</p>
+            <p>01</p>
+          </div>
+          
+          <div class="flex justify-between text-xl font-bold w-[250px]">
+            <p>Replies</p>
+            <p>01</p>
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto text-center lg:mt-12">
+        <div class="space-y-6 mb-10"> 
+          <h1 class="text-5xl font-extrabold">Let's Discuss</h1>
+          <p class="text-xl">A place for those new to web design to ask questions about where to begin, what's involved,<br> and where to turn next. No question is too simple!</p>
+        </div>
+        <div class="grid grid-cols-3 text-left gap-10 allnews-card">
+          <div id="news-container" class="col-span-2 flex-1 news-container">
+              <!--Dynamic news-->
+          </div>
+          <div id="show-seen" class="col-span-1 bg-gray-100 lg:p-10 space-y-3 rounded-xl">
+            <div class="flex justify-between">
+              <h5 class="msg-title text-xl font-bold">Title:</h5>
+              <p><span class="text-green-400 mr-4"><i class="fa-solid fa-check-double"></i></span>Mark as read (<span class="msg-count">0</span>)</p>
+            </div>
+            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
+              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
+              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
+            </div>
+            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
+              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
+              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
+            </div>
+            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
+              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
+              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
+            </div>
+            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
+              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
+              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto lg:mt-20">
+        <div class="bg-gray-900 text-white rounded-3xl p-20 flex justify-between items-center">
+          <div class="space-y-8">
+            <h3 class="text-4xl font-extrabold">Join Forum</h3>
+          <p>Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and <br> view the results directly within the app. </p>
+          <button class="bg-indigo-400 rounded-full text-2xl font-bold p-4">Register Now</button>
+          </div>
+          <div>
+            <img src="./images/joinforum.png" alt="">
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto text-center lg:mt-12">
+        <div class="space-y-6 mb-10"> 
+          <h1 class="text-5xl font-extrabold">Latest Post</h1>
+          <p class="text-xl">Here is our latest post, Real Stories, Real Impact — We streamline the grantmaking <br> process to eliminate risk and administrative burden</p>
+        </div>
+        <div id="latest-card" class="grid lg:grid-cols-3 gap-5">
+          
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <footer></footer>
+    <footer class="mt-20 bg-gray-100 p-20 text-center space-y-5">
+      <h3 class="text-4xl font-extrabold">ReTro</h3>
+      <p>Find Text Latest News, Videos & Pictures on Text and see latest updates, news, information from RETRO.COM. Explore more on Text.</p>
+      <div class="flex items-center justify-center space-x-6 text-xl cursor-pointer">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+      <hr class="border-gray-500 border-dashed mb-20">
+      <p>2024, All rights reserved</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
