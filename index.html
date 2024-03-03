@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forum</title>
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/effb651193.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--daisyUI and tailwind-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <!--navbar-->
+      <nav class="container mx-auto">
+        <div class="navbar bg-base-100 mt-50">
+          <div class="flex-1">
+            <a class="text-2xl font-bold cursor-pointer">ReTro</a>
+          </div>
+          <div class="flex-none dropdown">
+            <div id="menu-btn" tabindex="0" role="button" class="btn btn-ghost lg:hidden menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </div>
+            <ul class="lg:flex flex-col lg:space-x-4 dropdown-content z-[1]">
+              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Home">
+                <a href="#"><i class="fa-solid fa-house w-[25px]"></i></a>
+              </li>
+              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Blog">
+                <a href="#"><i class="fa-solid fa-pen w-[25px]"></i></a>
+              </li>
+              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Add account">
+                <a href="#"><i class="fa-solid fa-user-plus w-[25px]"></i></a>
+              </li>
+              <li class="p-2 border-gray-500 border-2 rounded-full text-center tooltip cursor-pointer" data-tip="Flag">
+                <a href="#"><i class="fa-solid fa-flag w-[25px]"></i></a>
+              </li>
+              <li class="lg:px-4 lg:py-2 p-1 rounded-full text-center bg-indigo-400 text-white font-bold cursor-pointer">
+                <a href="#">Sign in</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
