@@ -67,7 +67,7 @@ const allNews = async () => {
       });
     });
     toggleLoadingSpinner(false);
-  }, 2000);
+  }, 1000);
 };
 
 const postByQuery = async (searchValue) => {
