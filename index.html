@@ -56,19 +56,19 @@
     </header>
 
     <main class="container mx-auto">
-      <section class="bg-[url(./images/bannerbg1.jpg)] min-h-fit bg-no-repeat bg-cover bg-center text-left text-white rounded-3xl m-4 lg:m-0 p-40 flex items-center justify-between">
+      <section class="bg-[url('./images/bgbanner.png')] bg-[#13142f] bg-cover bg-center text-left text-white rounded-3xl m-4 lg:m-0 p-40 flex items-center justify-between">
         <div class="lg:space-y-6">
           <h1 class="text-6xl font-extrabold">Welcome to the <br> <span class="bg-gradient-to-r from-[#797DFC] to-[#5055e6] inline-block text-transparent bg-clip-text">ReTro</span> Forum</h1>
-          <p class="text-2xl font-bold">Share your favorite opinion and <br> win and wp forum coffee mug!</p>
+          <p class="text-xl">Share your favorite opinion and <br> win and retro forum coffee mug!</p>
           <div
                 id="search-section"
                 class="bg-white p-2 flex items-center rounded-full my-4 w-96"
               >
                 <input
-                  id="coupon-input"
+                  id="search-input"
                   type="text"
                   placeholder=""
-                  class="input border-none input-accent w-full max-w-xs rounded-full"
+                  class="input border-none input-info w-full max-w-xs rounded-full text-black"
                 /><button
                   id="search-btn"
                   class="btn bg-indigo-400 lg:text-xl text-white apply rounded-full"
@@ -99,42 +99,32 @@
           </div>
         </div>
       </section>
+
+      
       <section class="container mx-auto text-center lg:mt-12">
         <div class="space-y-6 mb-10"> 
           <h1 class="text-5xl font-extrabold">Let's Discuss</h1>
           <p class="text-xl">A place for those new to web design to ask questions about where to begin, what's involved,<br> and where to turn next. No question is too simple!</p>
         </div>
+        <div class="flex justify-center items-center mb-2">
+          <span id="spinner" class="loading loading-spinner loading-lg hidden"></span>
+        </div>
         <div class="grid grid-cols-3 text-left gap-10 allnews-card">
           <div id="news-container" class="col-span-2 flex-1 news-container">
               <!--Dynamic news-->
+              
           </div>
-          <div id="show-seen" class="col-span-1 bg-gray-100 lg:p-10 space-y-3 rounded-xl">
+          <div id="show-seen" class="col-span-1 bg-gray-100 lg:p-10 space-y-3 rounded-xl h-fit">
             <div class="flex justify-between">
               <h5 class="msg-title text-xl font-bold">Title:</h5>
-              <p><span class="text-green-400 mr-4"><i class="fa-solid fa-check-double"></i></span>Mark as read (<span class="msg-count">0</span>)</p>
+              <p><span class="text-green-400 mr-4"><i class="fa-solid fa-check-double"></i></span>Mark as read (<span id="msg-count">0</span>)</p>
             </div>
-            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
-              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
-              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
-            </div>
-            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
-              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
-              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
-            </div>
-            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
-              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
-              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
-            </div>
-            <div class="flex bg-white p-4 rounded-lg justify-between items-center">
-              <h5>10 Kids Unaware of Their <br> Halloween Costume</h5>
-              <p><span><i class="fa-regular fa-eye mr-2"></i></span> 1500</p>
-            </div>
-            
+           <!--seen message dynamic-->
           </div>
         </div>
       </section>
       <section class="container mx-auto lg:mt-20">
-        <div class="bg-gray-900 text-white rounded-3xl p-20 flex justify-between items-center">
+        <div class="bg-[#13142f] text-white rounded-3xl p-20 flex justify-between items-center">
           <div class="space-y-8">
             <h3 class="text-4xl font-extrabold">Join Forum</h3>
           <p>Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and <br> view the results directly within the app. </p>
